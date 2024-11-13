@@ -17,5 +17,9 @@ public class GameService {
 	public List<GameMinDTO> findAll(){
 		return gameRepository.findAll().stream().map(x -> new GameMinDTO(x)).toList();
 	}
+	
+//	public GameMinDTO findById(Long id) {
+//		return gameRepository.findById(id).get();
+//	}
 
 }
