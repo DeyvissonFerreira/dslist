@@ -24,5 +24,4 @@ public class GameListService {
 		return new GameListDTO(gameListRepository.findById(id).get());
 	}
 
-
 }
