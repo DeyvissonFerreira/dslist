@@ -1,5 +1,8 @@
 package com.devsuperior.dslist.dto;
 
+import com.devsuperior.dslist.validation.DifferentIndexes;
+
+@DifferentIndexes(message = "sourceIndex e targetIndex devem não pode ter o mesmo valor.")
 public class ReplacementDTO {
 	
 	private Integer sourceIndex;
